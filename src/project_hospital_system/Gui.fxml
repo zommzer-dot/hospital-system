@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0"
+            prefWidth="1000.0"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="project_hospital_system.GuiController">
+
+    <children>
+
+        <Label layoutX="370.0"
+               layoutY="14.0"
+               text="Hospital Management System"/>
+
+        <!-- Text Fields -->
+
+        <TextField fx:id="idField"
+                   layoutX="40.0"
+                   layoutY="70.0"
+                   promptText="ID"/>
+
+        <TextField fx:id="nameField"
+                   layoutX="220.0"
+                   layoutY="70.0"
+                   promptText="Name"/>
+
+        <TextField fx:id="ageField"
+                   layoutX="400.0"
+                   layoutY="70.0"
+                   promptText="Age"/>
+
+        <TextField fx:id="addressField"
+                   layoutX="580.0"
+                   layoutY="70.0"
+                   promptText="Address"/>
+
+        <TextField fx:id="phoneField"
+                   layoutX="760.0"
+                   layoutY="70.0"
+                   promptText="Phone"/>
+
+        <TextField fx:id="specializationField"
+                   layoutX="40.0"
+                   layoutY="130.0"
+                   promptText="Specialization"/>
+
+        <TextField fx:id="clinicField"
+                   layoutX="220.0"
+                   layoutY="130.0"
+                   promptText="Clinic"/>
+
+        <TextField fx:id="salaryField"
+                   layoutX="400.0"
+                   layoutY="130.0"
+                   promptText="Salary"/>
+
+        <TextField fx:id="shiftField"
+                   layoutX="580.0"
+                   layoutY="130.0"
+                   promptText="Shift"/>
+
+        <TextField fx:id="qualificationField"
+                   layoutX="760.0"
+                   layoutY="130.0"
+                   promptText="Qualification"/>
+
+        <TextField fx:id="bloodTypeField"
+                   layoutX="40.0"
+                   layoutY="190.0"
+                   promptText="Blood Type"/>
+
+        <TextField fx:id="medicalHistoryField"
+                   layoutX="220.0"
+                   layoutY="190.0"
+                   promptText="Medical History"/>
+
+        <TextField fx:id="appointmentDateField"
+                   layoutX="400.0"
+                   layoutY="190.0"
+                   promptText="Appointment Date"/>
+
+        <TextField fx:id="billAmountField"
+                   layoutX="580.0"
+                   layoutY="190.0"
+                   promptText="Bill Amount"/>
+
+        <!-- Buttons -->
+
+        <Button layoutX="40.0"
+                layoutY="270.0"
+                prefWidth="150.0"
+                text="Add Doctor"
+                onAction="#addDoctor"/>
+
+        <Button layoutX="220.0"
+                layoutY="270.0"
+                prefWidth="150.0"
+                text="Add Patient"
+                onAction="#addPatient"/>
+
+        <Button layoutX="400.0"
+                layoutY="270.0"
+                prefWidth="150.0"
+                text="Add Nurse"
+                onAction="#addNurse"/>
+
+        <Button layoutX="580.0"
+                layoutY="270.0"
+                prefWidth="150.0"
+                text="Display Doctors"
+                onAction="#displayDoctors"/>
+
+        <Button layoutX="760.0"
+                layoutY="270.0"
+                prefWidth="150.0"
+                text="Display Patients"
+                onAction="#displayPatients"/>
+
+        <Button layoutX="40.0"
+                layoutY="340.0"
+                prefWidth="150.0"
+                text="Display Nurses"
+                onAction="#displayNurses"/>
+
+        <Button layoutX="220.0"
+                layoutY="340.0"
+                prefWidth="150.0"
+                text="Search Doctor"
+                onAction="#searchDoctor"/>
+
+        <Button layoutX="400.0"
+                layoutY="340.0"
+                prefWidth="150.0"
+                text="Delete Patient"
+                onAction="#deletePatient"/>
+
+        <Button layoutX="580.0"
+                layoutY="340.0"
+                prefWidth="150.0"
+                text="Add Appointment"
+                onAction="#addAppointment"/>
+
+        <Button layoutX="760.0"
+                layoutY="340.0"
+                prefWidth="150.0"
+                text="Display Appointments"
+                onAction="#displayAppointments"/>
+
+        <Button layoutX="220.0"
+                layoutY="410.0"
+                prefWidth="150.0"
+                text="Add Bill"
+                onAction="#addBill"/>
+
+        <Button layoutX="400.0"
+                layoutY="410.0"
+                prefWidth="150.0"
+                text="Display Bills"
+                onAction="#displayBills"/>
+
+        <!-- Output -->
+
+        <TextArea fx:id="outputArea"
+                  layoutX="40.0"
+                  layoutY="500.0"
+                  prefHeight="160.0"
+                  prefWidth="870.0"/>
+
+    </children>
+
+</AnchorPane>
